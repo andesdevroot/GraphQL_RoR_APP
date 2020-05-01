@@ -19,7 +19,5 @@ PROJECT_USERS = {
 PROJECT_USERS.each do |email, projects|
    user = User.new(email: email, password: 'secret')
    projects.each { |title| user.projects.build(title: title) }
-   user.save.
+   user.save
  end
-
- 
